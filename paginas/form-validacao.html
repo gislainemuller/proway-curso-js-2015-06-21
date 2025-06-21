@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../assets/js/form-validacao.js"></script>
+</head>
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <form action="#" method="POST">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" placeholder="Digite o nome do Aluno">
+        </div>
+        <div></div>
+            <label for="campo-sobrenome">Sobrenome</label>
+            <input type="text" id="campo-sobrenome" placeholder="Digite o sobrenome do aluno">
+        </div>
+        <div>
+            <label for="campo-idade">Idade</label>
+            <input type="text" id="campo-idade" placeholder="Digite a idade">
+        </div>
+        <div>
+            <label for="campo-classe">Classe</label>
+            <select id="campo-classe">
+                <option selected disabled></option>
+                <option value="1">1º Ano</option>
+                <option value="2">2º Ano</option>
+                <option value="3">3º Ano</option>
+                <option value="4">4º Ano</option>
+                <option value="5">5º Ano</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" name="modalidade" id="campo-modalidade-bolsista" value="bolsista">
+            <label for="campo-modalidade-bolsista">Bolsista</label>
+            <input type="radio" name="modalidade" id="campo-modalidade-mensalista" value="mensalista">
+            <label for="campo-modalidade-mensalista">Mensalista</label>
+        </div>
+        <div>
+            <input type="checkbox" value="sim" id="campo-estrangeiro">
+            <label for="campo-estrangeiro">Estrangeiro</label>
+        </div>
+        <button type="button" onclick="limparCampos()">Limpar campos</button>
+        <button type="button" ondblclick="cadastrar()">Cadastrar (dois clicks)</button>
+    </form>
+    
+</body>
+</html>
