@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRiar tags</title>
+</head>
+<body>
+    <!--criar-elementos.html-->
+    <!-- atalho para fazer comentario (ctrl + ;) -->
+     <button onclick="criarImagem()">Criar Imagens utilizando document.createElement</button>
+
+     <div>
+        <label for="campo-curso">Cursos</label>
+        <input type="text" id="campo-curso">
+        <button onclick="criarCurso()">Salvar</button>
+     </div>
+
+     <button onclick ="voltarPagina()">Voltar Página</button>
+     <button onclick="proximaPagina()">Proxima Página</button>
+     <div>
+        <label for="campo-quantidade-desejada">Quantidade Desejada</label>
+        <select name="campo-quantidade-desejada" id="campo-quantidade-desejada"
+         onchange ="voltarPrimeiraPagina()">
+            <option value="4">4 itens</option>
+            <option value="8">8 itens</option>
+            <option value="16">16 itens</option>
+        </select>
+     </div>
+     <span id="texto-pagina"></span>
+     <table id="mercadinho">
+        <thead>
+            <tr>
+                <th>Produto</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+     </table>
+     <button onclick ="carregarProdutos()">Carregar produtos</button>
+
+     <script src="../assets/js/criar-elementos.js"></script>
+</body>
+</html>
