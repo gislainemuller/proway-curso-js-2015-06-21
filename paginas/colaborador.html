@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaboradores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-dark text-light">
+    <div class="ps-3 pe-3">
+       
+
+        <h1 class="text-primary text-center">Lista de Colaboradores</h1>
+        <div class="mb-2 row justify-content-end">
+            <div class="col-2 text-end">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus"></i> Cadastrar Colaborador
+        </button>
+        </div>
+        </div>
+
+        <div>
+            <table class="table table-dark table-striped table-hover table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome Completo</th>
+                        <th>Quantidade Horas</th>
+                        <th>Valor Hora</th>
+                        <th>Salario Bruto</th>
+                        <td>Ação</td>
+
+                    </tr>
+                </thead>
+                <tbody id="colaboradores">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalColaboradorLabel">Cadastro COlaborador</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="campo-nome" class="form-label">Nome<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" id="campo-nome" name="nome" required class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="campo-sobrenome" class="form-label">Sobrenome<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" id="campo-sobrenome" name="sobrenome" required class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="campo-quantidade-horas" class="form-label">Quantidade horas<span
+                                    class="text-danger">*</span></label>
+                            <input type="number" id="campo-quantidade-horas" name="quantidade-horas" required
+                                class="form-control">
+                        </div>
+                        <div>
+                            <label for="campo-valor-horas" class="form-label">Valor Hora<span
+                                    class="text-danger">*</span></label>
+                            <input type="number" id="campo-valor-hora" name="valor-hora" step="0.10" required
+                                class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="botao-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" id="botao-salvar"><i class="fa-solid fa-floppy-disk"></i>Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/9323f0ff14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+        <script src="../assets/js/colaborador.js"></script>
+
+</body>
+
+</html>
